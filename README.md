@@ -24,6 +24,8 @@ I am working to improve. Feel free to write to me for your ideas.
 
 
 ### if you are use Cloudflare 
+note: These settings weaken your site's security.
+
     LOGIN > Firewall > Firewall Rules > Add
     Rule Name = Tor access
     Then Bypass
