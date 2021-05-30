@@ -4,8 +4,8 @@
 ### Install
     git clone https://github.com/tolgatasci/Traffic-Generator-with-Docker-and-Tor
     cd Traffic-Generator-with-Docker-and-Tor
-    docker build -t trafic .
-    docker run --name test1 trafic -loop 5 -u https://www.eniyiuygulama.com -l 5 -d True -w 5
+    docker build -t traffic .
+    docker run --name test1 traffic -loop 5 -u https://www.eniyiuygulama.com -l 5 -d True -w 5
 
 ### Arg Helps
 
