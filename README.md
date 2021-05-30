@@ -20,5 +20,11 @@
 
 * First visit site
 * if the limit is more than 0 it scans the links. Counts the links. It works from large to small.
+I am working to improve. Feel free to write to me for your ideas.
 
-##### I am working to improve. Feel free to write to me for your ideas.
+
+### if you are use Cloudflare 
+    LOGIN > Firewall > Firewall Rules > Add
+    Rule Name = Tor access
+    Then Bypass
+    Field Country  = Value Tor
