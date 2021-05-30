@@ -1,0 +1,4 @@
+Log notice file /var/log/tor/notice.log
+SocksPort 0.0.0.0:9050
+ControlPort  0.0.0.0:9051
+#HashedControlPassword 16:x
