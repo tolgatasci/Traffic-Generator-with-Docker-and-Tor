@@ -9,7 +9,7 @@
 
 ### Arg Helps
 
-    Required "docker run --name test1 trafic -loop 5" 
+    Required "docker run --name test1 traffic -loop 5" 
     -loop how many times will it be repeated
     -u URL
     -d Debug bool
