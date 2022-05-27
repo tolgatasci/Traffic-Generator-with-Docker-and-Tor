@@ -5,7 +5,7 @@ from selenium import webdriver
 import re
 from collections import Counter
 from urllib.parse import urlparse
-from fake_useragent import UserAgent
+from my_fake_useragent import UserAgent
 import argparse
 WEBURL = "https://www.eniyiuygulama.com/"
 PROXY = "socks5://127.0.0.1:9050"
@@ -25,8 +25,9 @@ def referance():
             print("History setup %s" % HISTORY[-1])
 def setup():
     global driver
-    ua = UserAgent()
-    user_agent = ua['google chrome']
+    ua = UserAgent(family='chrome')
+
+    user_agent = ua.random()
 
     chrome_options = webdriver.ChromeOptions()
     # specify headless mode

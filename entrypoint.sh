@@ -8,6 +8,7 @@ n=0
 # continue until $n equals 5
 while [ $n -le $2 ]
 do
+	# shellcheck disable=SC2068
 	python3 hit.py $@
 	python3 refreship.py
 	n=$(( n+1 ))	 # increments $n

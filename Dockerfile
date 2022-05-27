@@ -16,7 +16,7 @@ RUN echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/so
 RUN apt-get update -y
 RUN apt-get install -y google-chrome-stable
 
-ENV CHROMEDRIVER_VERSION 91.0.4472.19
+ENV CHROMEDRIVER_VERSION 102.0.5005.61
 ENV CHROMEDRIVER_DIR /chromedriver
 RUN mkdir $CHROMEDRIVER_DIR
 
@@ -28,7 +28,7 @@ RUN \
   apt-get dist-upgrade -y && \
   apt-get install -y --no-install-recommends tor tor-geoipdb torsocks && \
   apt-get clean
-Add torrc /etc/tor/torrc
+ADD torrc /etc/tor/torrc
 RUN apt-get install python3-pip -y
 RUN apt-get install -y chromium-browser
 RUN apt-get install -y psmisc netcat
